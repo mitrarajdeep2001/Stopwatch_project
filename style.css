@@ -1,0 +1,81 @@
+/* Normalise CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family:  'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d2ae8;
+}
+
+.main-container{
+    /* min-width: 500px; */
+    padding: 15px;
+    border-radius: 8px;
+    border: 15px solid blanchedalmond;
+    /* background-color: tomato; */
+}
+
+.main-container .time{
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 8rem;
+    background-color: aqua;
+    color: #7d2ae8;
+    /* padding: 5px; */
+    border-radius: 5px;
+}
+
+.time div{
+    width: 100px;
+}
+.main-container .buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#start-btn , #stop-btn, #reset-btn{
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: transform linear 0.2s;
+    cursor: pointer;
+}
+
+#start-btn:hover, #stop-btn:hover, #reset-btn:hover{
+    transform: scale(1.1);
+}
+
+.buttons #start-btn{
+    background-color: red;
+}
+
+.buttons #stop-btn{
+    background-color: blue;
+}
+
+.buttons #reset-btn{
+    background-color: green;
+}
+
+.active{
+    background-color: lightgrey !important;
+    cursor: not-allowed !important;
+}
